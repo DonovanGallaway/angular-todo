@@ -1,0 +1,9 @@
+<div>
+    <h1>{{post.subject}}</h1>
+    <h2>{{post.details}}</h2>
+    <a routerLink="/"><button>Go Back</button></a>
+
+    <a [routerLink]="'/edit/' + post.id"><button>Edit Todo</button></a>
+
+    <button (click)="deleteTodo()">Delete Todo</button>
+</div>
